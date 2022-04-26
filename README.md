@@ -15,7 +15,7 @@ As a governance analyst it is part of your duties to assess the level of protect
 
 Here is a sample data file containing hashes dumped together:
 
-https://github.com/hritikamk/Goldman-Sachs-Virtual-Intern/blob/main/Raw_data.txt
+https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program/blob/master/Password_Dump.txt
 
 After the conducted analysis it was determined that organization uses an outdated password hashing algorithm (MD5) which offers very little protection in the event of a password database leaking. It was also determined that the current password policy is not aligned with industry best practices allowing users to have short passwords (6 characters) and reuse usernames as part of passwords. 
 
@@ -38,34 +38,45 @@ Completing this task assigned by Goldman Sachs, MD5 and SHA were the two algorit
 
 ## Project Report
 ```
-Dear Sir/Ma’am
+Subject: Crack leaked password database
 
-After trying to crack all the leaked hashes, I found several vulnerabilities in your password policy 
-and this email concludes all the findings and suggestions to improve your password policy.
+Dear Sir/Ma’am,
+While cracking and reviewing the leaked hashes, I have found multiple loopholes and vulnerabilities in the shared password list. 
+Please find the below suggestions and ideas to further improve the password selection process and make breaking the passwords 
+more difficult.
 
-Secure Hash Algorithm (SHA) and Message Digest (MD5) are the standard cryptographic hash functions 
-to provide data security for authentication.
+All the compromised passwords are using the MD5 cryptographic hash function which has many weaknesses, the main issue being MD5 
+is vulnerable to collision attacks in which the hashing algorithm takes two different inputs and produces the same hash. This 
+property means the MD5 hash function is considered “broken” and very high-risk. This provides very poor level of protection as 
+multiple tools such as Hashcat and free-to-use web apps can be used to crack the hashes.
+I used Hashcat along with CrackStation’s Human only dictionary and MD5 Online to crack these.
 
-All the password which are compromised were using MD5 which is a weaker hash algorithm and is prone to collisions.
-It was very easy to crack with Hashcat.com and rockyou.txt wordlist via terminal and web browsers. 
-I would suggest that you use a very strong password encryption mechanism to create hashes for the password based on SHA.
+To make breaking the passwords harder, a lower-risk hash function should be implemented such as SHA512crypt which is resistant 
+to collision attacks and mostly resistant to length extension attacks, or Bcrypt which is the standard password hash algorithm 
+used in most systems. SHA512crypt passes the password through 5,000 hashing iterations to make decrypting harder and near 
+impossible. Bcrypt includes a salt and is designed to withstand brute-force attacks by intentionally being slower to operate. 
+The unsalted passwords listed below could be cracked using online websites such as CrackStation, which is very insecure. 
 
-After cracking the passwords, we find the following things about organisation’s password policy: 
-• Minimum length for password is set to 6.
-• There is no specific requirement for the password creation. 
-  Users can use any combination of word and letters to create a password.
+Judging from the cracked passwords listed below, the password policy allows employees to use any combination of numbers and 
+characters. The space character is not a valid input, and the minimum password length may be six and the maximum fourteen, 
+although the size of the sample passwords is too small for this conclusion to be definitive. The organisation’s average password 
+length is almost eight characters but has multiple passwords shorter than eight and easy to guess which pose a high security 
+risk. Their key space is smaller than modern standards.
 
-You can include several new things in your password policy. My recommendations are:
-• Avoid common words and character combinations in your password.
-• Longer passwords are better, 8 characters is a starting point.
-• Don’t reuse your passwords.
-• Include special character, Capital and Small letters, numbers in your password.
-• Don’t let users include their username, actual name, date of birth and other personal information while creating a password.
-• Train your users to follow these policies to keep their passwords safe.
+The password policy should be changed so that passwords include the following: 
+• Use of number, letter, special character, capital letter
+• Keeping a threshold on length. Set minimum length of 8. 
+• Employees should also avoid easy to guess passwords such as pet names and birthdates as well as avoid repeating their 
+  passwords for multiple accounts.
+• Reduce redundancy across services such that in case of a leak out of one service doesn’t make the other passwords 
+  vulnerable.
+• Not allowing sibling credentials to assist the password naming, like name / user name / email / date of birth / sex.
+• Avoiding the occurrence of English verbs like book, popular, eating, hero, life, John Wick, crack me, expert that makes 
+  the password vulnerable to brute force attacks.
 
-Thanking you, 
-Name: Neel P. Akolkar
-B.Tech Electronics and Telecommunications 
+Fond regards,
+Pratyush Kumar
+
 ```
 ## Observations:
 ```
@@ -107,22 +118,22 @@ johnwick007:f6a0cb102c62879d397b12b62c092c06 - bluered
 ```
 Complete report is available at: 
 
-https://github.com/hritikamk/Goldman-Sachs-Virtual-Intern
+https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program
 
 
 ## Completion Certificate
 
-https://github.com/hritikamk/Goldman-Sachs-Virtual-Intern/blob/main/2021%20Goldman%20Sachs_completion_certificate.pdf
+https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_FYquW8LGzsM8QppmQ_1651005195990_completion_certificate.pdf
 
 
 ## Resources 
 
 https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/
 
-https://howsecureismypassword.net/
+https://www.security.org/how-secure-is-my-password/
 
-https://en.wikipedia.org/wiki/Password_cracking#Software
+https://en.wikipedia.org/wiki/Cryptographic_hash_function
 
 https://en.wikipedia.org/wiki/Salt_(cryptography)
 
-https://hashcat.com
+https://en.wikipedia.org/wiki/Password_cracking#Software
