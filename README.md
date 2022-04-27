@@ -13,6 +13,10 @@ As a governance analyst it is part of your duties to assess the level of protect
 
 `What controls could be implemented to make cracking much harder for the hacker in the event of a password database leaking again?`
 
+`What can you tell about the organization’s password policy (e.g. password length, key space, etc.)?`
+
+`What would you change in the password policy to make breaking the passwords harder? `
+
 Here is a sample data file containing hashes dumped together:
 
 https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program/blob/master/Password_Dump.txt
@@ -116,7 +120,7 @@ liveltekah:3f230640b78d7e71ac5514e57935eb69 - qazxsw
 blikimore:917eb5e9d6d6bca820922a0c6f7cc28b - Pa$$word1
 johnwick007:f6a0cb102c62879d397b12b62c092c06 - bluered
 ```
-Complete report is available at: 
+Complete report and my findings are available at: 
 
 https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program
 
