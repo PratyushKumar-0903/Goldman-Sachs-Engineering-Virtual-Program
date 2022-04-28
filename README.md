@@ -114,7 +114,7 @@ https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program
 
 ## Completion Certificate
 
-https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_FYquW8LGzsM8QppmQ_1651005195990_completion_certificate.pdf
+<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_FYquW8LGzsM8QppmQ_1651005195990_completion_certificate.pdf"><p align= "center"><img src="https://github.com/PratyushKumar-0903/Goldman-Sachs-Engineering-Virtual-Program/blob/master/Images/Certificate.png"></p></a>
 
 
 ## Resources 
