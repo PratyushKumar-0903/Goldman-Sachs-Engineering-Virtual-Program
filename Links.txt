@@ -1,21 +1,27 @@
-==========YOUTUBE HASH CRACKING VIDEOS===========
+==========YOUTUBE VIDEOS===========
 https://www.youtube.com/watch?v=R_Nsj6BUr6w
 https://www.youtube.com/watch?v=sSdxRaQXr3s&t=601s&ab_channel=PentestsandTech
 https://www.youtube.com/watch?v=rgWcguAg-XA&t=385s&ab_channel=DavidBombal
 
 =============HASH CRACKING WEBSITES===============
+https://crackstation.net/
 https://www.md5online.org/md5-decrypt.html
 https://www.onlinehashcrack.com/
-https://crackstation.net/
 
-===============WORDLIST================
+===============WORD-LIST AND RULE-LIST=================
 https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 https://github.com/danielmiessler/SecLists/tree/master/Passwords
+https://github.com/kaonashi-passwords/Kaonashi
 
-==============RESOURCES===============
+==============RESOURCES REFERRED===============
 https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/?comments=1&post=24573271
 https://en.wikipedia.org/wiki/Cryptographic_hash_function
 https://en.wikipedia.org/wiki/Salt_(cryptography)
 https://en.wikipedia.org/wiki/Password_cracking#Software
 https://www.security.org/how-secure-is-my-password/
+
+=================RESOURCES====================
 https://hashcat.net/hashcat/
+https://cryptokait.com/2020/09/02/taking-password-cracking-to-the-next-level/
+https://hashcat.net/wiki/
+https://hashcat.net/wiki/doku.php?id=example_hashes
